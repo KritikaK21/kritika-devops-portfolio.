@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kritika — DevOps Portfolio</title>
+  <meta name="description" content="Kritika's DevOps portfolio — Terraform, AKS, ArgoCD, GitOps, CI/CD, SonarQube, ECS, and more."/>
+  <style>
+    :root{
+      --bg:#f7f7fb; --card:#ffffff; --muted:#6b7280; --accent:#2563eb;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; margin:0; background:var(--bg); color:#111}
+    .wrap{max-width:1000px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    h1{margin:0;font-size:20px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .hero{background:linear-gradient(180deg,#fff 0,#fafafa 100%);padding:28px;margin-top:16px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .hero h2{margin:0 0 8px;font-size:24px}
+    .hero p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04);border:1px solid rgba(15,23,42,0.03)}
+    .card h3{margin:0 0 8px;font-size:16px;color:var(--accent)}
+    .tools{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .link{display:inline-block;margin-top:8px;font-weight:600;color:#0f172a;text-decoration:none;border-top:1px solid transparent;padding-top:6px}
+    footer{margin-top:28px;padding:20px;text-align:center;color:var(--muted);font-size:14px}
+    .sr{display:inline-block;padding:6px 10px;background:#eef2ff;border-radius:999px;color:#3730a3;font-weight:700;margin-right:8px;font-size:12px}
+    @media (max-width:520px){header{flex-direction:column;align-items:flex-start;gap:8px}h1{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="sr">DevOps</span>
+          <h1>Kritika’s DevOps Portfolio</h1>
+        </div>
+        <p style="margin:6px 0 0;color:var(--muted);font-size:14px">Hands-on mini projects: Terraform, AKS, GitOps, CI/CD, SonarQube, ECS & more.</p>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home" class="hero">
+      <h2>Welcome — I build practical DevOps projects</h2>
+      <p>I’m Kritika — learning and shipping DevOps & cloud automation projects. Below are 12 small real-world projects that demonstrate Terraform, AKS, ArgoCD, GitOps, CI/CD pipelines, monitoring and more.</p>
+    </main>
+
+    <section id="projects" style="margin-top:22px">
+      <h2 style="margin:0 0 12px">🚀 Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Automates Azure Infra with Terraform & Pipelines</h3>
+          <div class="tools">Terraform • Azure DevOps • CI/CD</div>
+          <div>Automated provisioning of Azure resources and CI pipelines to deploy infra changes safely.</div>
+        </article>
+
+        <article class="card">
+          <h3>ArgoCD (GitOps CD) to Deploy App to K8s Cluster</h3>
+          <div class="tools">ArgoCD • GitOps • Kubernetes</div>
+          <div>Demonstrates GitOps: declarative app manifests sync to cluster via ArgoCD.</div>
+        </article>
+
+        <article class="card">
+          <h3>Create a Containerized application using AKS</h3>
+          <div class="tools">Docker • AKS</div>
+          <div>Containerized sample app and deployed to Azure Kubernetes Service (AKS).</div>
+        </article>
+
+        <article class="card">
+          <h3>Deploy an Application on an AKS Cluster using ACR</h3>
+          <div class="tools">ACR • AKS</div>
+          <div>Built & pushed images to Azure Container Registry and deployed them on AKS.</div>
+        </article>
+
+        <article class="card">
+          <h3>Automate Azure (VNet & LB) using Terraform</h3>
+          <div class="tools">Terraform • Azure</div>
+          <div>Automated VNet, subnets, and load balancer creation using Terraform modules.</div>
+        </article>
+
+        <article class="card">
+          <h3>Automate End-to-End AWS Infra. with Terraform</h3>
+          <div class="tools">Terraform • AWS</div>
+          <div>Full AWS infra provisioning (VPC, EC2, IAM, S3) with parameterized Terraform code.</div>
+        </article>
+
+        <article class="card">
+          <h3>Deploy & Manage the Amazon Website using DevOps Tools</h3>
+          <div class="tools">CI/CD • Monitoring • Docker</div>
+          <div>Sample project demonstrating build, deploy, and monitoring flows for a mock e-commerce site.</div>
+        </article>
+
+        <article class="card">
+          <h3>Setting Up & Running SonarQube for Project Analysis</h3>
+          <div class="tools">SonarQube • Code Quality</div>
+          <div>Integrating SonarQube scans into CI pipelines to enforce code quality checks.</div>
+        </article>
+
+        <article class="card">
+          <h3>Deploy Super Mario on Kubernetes</h3>
+          <div class="tools">Kubernetes • Docker</div>
+          <div>Fun demo of running a containerized retro-game inside a k8s cluster.</div>
+        </article>
+
+        <article class="card">
+          <h3>Deploy Netflix Clone Application on Kubernetes</h3>
+          <div class="tools">Kubernetes • Helm</div>
+          <div>Microservices-based Netflix-clone deployed using Helm charts.</div>
+        </article>
+
+        <article class="card">
+          <h3>Create end-to-end CI/CD Pipeline</h3>
+          <div class="tools">GitHub Actions • Docker • Kubernetes</div>
+          <div>Complete pipeline: build image, run tests, push image, and deploy to cluster.</div>
+        </article>
+
+        <article class="card">
+          <h3>Deploy Web Application on AWS ECS with GitHub Actions</h3>
+          <div class="tools">ECS • GitHub Actions</div>
+          <div>Using GitHub Actions to build, push and deploy to AWS Elastic Container Service (ECS).</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <div class="card">
+        <h3>Contact</h3>
+        <p>If you want to reach out: <strong>kritika@example.com</strong> — replace with your real email.</p>
+        <p style="margin-top:10px;color:var(--muted)">GitHub: <a href="https://github.com/KritikaK21" target="_blank">github.com/KritikaK21</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Kritika — DevOps Portfolio
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
