@@ -1,73 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kritika’s DevOps Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritika’s DevOps Portfolio 🚀</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f7fa;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
-      text-align: center;
-      padding: 40px;
     }
+
     header {
-      background: #0d1117;
+      background-color: #111;
       color: white;
-      padding: 20px;
-      border-radius: 12px;
+      text-align: center;
+      padding: 20px 0;
     }
-    h1 { margin-bottom: 10px; }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
     nav a {
-      margin: 0 12px;
+      color: white;
       text-decoration: none;
-      color: #58a6ff;
-      font-weight: 500;
+      margin: 0 20px;
+      font-weight: bold;
     }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
     section {
-      background: white;
-      border-radius: 10px;
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 25px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: left;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    h2 { color: #0d1117; }
+
+    h2 {
+      color: #111;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .project {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #00bcd4;
+    }
+
+    .project a {
+      color: #0078d7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
     footer {
-      margin-top: 30px;
-      color: #666;
-      font-size: 14px;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    .contact a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Kritika’s DevOps Portfolio 🚀</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Showcasing my real-world DevOps & Cloud projects — blending automation, CI/CD, and infrastructure excellence.</p>
   </header>
 
-  <section id="intro">
-    <h2>Welcome!</h2>
-    <p>Showcasing my real-world DevOps & Cloud projects — blending automation, CI/CD, and infrastructure excellence.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Kritika Aggarwal</strong>, passionate about <b>DevOps, Cloud Computing, and Automation</b>. I love building scalable infrastructures and experimenting with new tools that make software delivery faster and more reliable.</p>
   </section>
 
   <section id="projects">
     <h2>My Projects</h2>
-    <ul>
-      <li><b>Cloud Infrastructure Automation:</b> Built CI/CD pipelines using Jenkins and Docker.</li>
-      <li><b>Containerized Microservices:</b> Deployed scalable apps on Kubernetes and AWS ECS.</li>
-      <li><b>Monitoring Setup:</b> Configured Prometheus and Grafana dashboards for system visibility.</li>
-    </ul>
+
+    <div class="project">
+      <h3>☁️ Cloud Infrastructure Automation</h3>
+      <p>Built CI/CD pipelines using Jenkins and Docker to automate the deployment of web applications on AWS.</p>
+      <a href="https://github.com/KritikaK21/cloud-infra-automation" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>📦 Containerized Microservices</h3>
+      <p>Deployed scalable applications using Kubernetes and AWS ECS, improving system uptime and scalability.</p>
+      <a href="https://github.com/KritikaK21/containerized-microservices" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>📊 Monitoring Setup with Prometheus & Grafana</h3>
+      <p>Configured Prometheus and Grafana dashboards for real-time monitoring and system visibility.</p>
+      <a href="https://github.com/KritikaK21/monitoring-setup" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- ✨ Add new projects below in same format ✨ -->
+    <!-- Example:
+    <div class="project">
+      <h3>🧠 AI Resume Screener</h3>
+      <p>Developed a machine learning model that ranks resumes using NLP-based keyword extraction.</p>
+      <a href="https://github.com/KritikaK21/ai-resume-screener" target="_blank">View on GitHub</a>
+    </div>
+    -->
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kritika@example.com">kritika@example.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/kritika-aggarwal" target="_blank">kritika-aggarwal</a></p>
