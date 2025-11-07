@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kritika’s DevOps Portfolio 🚀</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f8f9fa;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #111;
+      background-color: #0d1117;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 15px;
     }
 
     nav {
-      background-color: #222;
+      background-color: #161b22;
       display: flex;
       justify-content: center;
       padding: 10px 0;
@@ -31,7 +32,8 @@
       color: white;
       text-decoration: none;
       margin: 0 20px;
-      font-weight: bold;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     nav a:hover {
@@ -39,24 +41,25 @@
     }
 
     section {
-      padding: 20px 20px;
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
 
     h2 {
-      color: #111;
+      color: #0d1117;
       border-bottom: 2px solid #00bcd4;
       display: inline-block;
       padding-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     .project {
       background: white;
-      margin: 20px 0;
-      padding: 20px;
+      margin: 25px 0;
+      padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
 
     .project h3 {
@@ -74,8 +77,37 @@
       text-decoration: underline;
     }
 
+    .accordion {
+      background-color: white;
+      color: #0d1117;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.4s;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+
+    .active, .accordion:hover {
+      background-color: #e6f7fa;
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-left: 2px solid #00bcd4;
+      margin-bottom: 10px;
+    }
+
     footer {
-      background-color: #111;
+      background-color: #0d1117;
       color: white;
       text-align: center;
       padding: 15px 0;
@@ -91,25 +123,19 @@
       text-decoration: underline;
     }
 
-    .btn {
-      display: inline-block;
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
       margin-top: 10px;
-      background: #00bcd4;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .btn:hover {
-      background: #0097a7;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Kritika’s DevOps Portfolio 🚀</h1>
-    <p>Showcasing my real-world DevOps & Cloud projects — blending automation, CI/CD, and infrastructure excellence.</p>
+    <p>Showcasing real-world DevOps & Cloud projects — blending automation, CI/CD, Kubernetes, and infrastructure excellence.</p>
   </header>
 
   <nav>
@@ -120,54 +146,70 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      Hello! I'm <strong>Kritika Aggarwal</strong>, passionate about <b>DevOps, Cloud Computing, and Automation</b>.
-      I love building scalable infrastructures and experimenting with tools that make software delivery faster and more reliable.
-    </p>
+    <p>Hello! I'm <strong>Kritika Aggarwal</strong>, passionate about <b>DevOps, Cloud Computing, and Automation</b>. I love building scalable infrastructures, automating deployments, and experimenting with tools like Terraform, Kubernetes, and Docker to make delivery efficient and seamless.</p>
   </section>
 
   <section id="projects">
-    <h2>My Projects</h2>
-
-    <!-- ✅ Top project (fully ready) -->
+    <h2>Featured Project</h2>
     <div class="project">
-      <h3>🧩 Mario Game Project — CI/CD Pipeline Integration</h3>
-      <p>
-        Implemented a CI/CD pipeline for a containerized Mario Game using Jenkins, Docker, and GitHub Actions.
-        The project automates build, test, and deployment steps ensuring a seamless DevOps workflow.
-      </p>
-      <a href="https://github.com/KritikaK21/super-mario-k8s-deployment" target="_blank">View on GitHub</a>
-      <a href="https://us04web.zoom.us/clips/share/MmTf8GGfTDGUnkmg9yHMWQ" target="_blank" class="btn">🎥 Watch Demo</a>
+      <h3>🎮 Deploy Super Mario on Kubernetes</h3>
+      <p>This project demonstrates deploying a containerized Super Mario game on a Kubernetes cluster with infrastructure automated using Terraform. It integrates scalability, reliability, and hands-on DevOps workflow.</p>
+      <a href="https://github.com/KritikaK21/super-mario-k8s-deployment" target="_blank">View on GitHub</a> | 
+      <a href="https://us04web.zoom.us/clips/share/MmTf8GGfTDGUnkmg9yHMWQ" target="_blank">Watch Demo 🎥</a>
     </div>
 
-    <!-- 👇 Coming Soon Projects -->
-    <div class="project">
-      <h3>☁️ Cloud Infrastructure Automation (Coming Soon)</h3>
-      <p>Automating CI/CD pipelines with Jenkins and Docker to deploy web apps on AWS.</p>
-      <a href="#" target="_blank">View on GitHub</a>
+    <h2>More Projects</h2>
+
+    <button class="accordion">🧱 Terraform Projects</button>
+    <div class="panel">
+      <p>• Automates Azure Infra with Terraform & Pipelines (Coming Soon)</p>
+      <p>• Automate Azure (VNet & LB) using Terraform (Coming Soon)</p>
+      <p>• Automate End-to-End AWS Infra. with Terraform (Coming Soon)</p>
     </div>
 
-    <div class="project">
-      <h3>📦 Containerized Microservices (Coming Soon)</h3>
-      <p>Deploying scalable applications using Kubernetes and AWS ECS to improve system uptime.</p>
-      <a href="#" target="_blank">View on GitHub</a>
+    <button class="accordion">☸️ Kubernetes Projects</button>
+    <div class="panel">
+      <p>• Deploy Netflix Clone Application on Kubernetes (Coming Soon)</p>
+      <p>• Create a Containerized application using AKS (Coming Soon)</p>
+      <p>• Deploy an Application on an AKS Cluster using ACR (Coming Soon)</p>
     </div>
 
-    <div class="project">
-      <h3>📊 Monitoring Setup with Prometheus & Grafana (Coming Soon)</h3>
-      <p>Configuring dashboards for real-time monitoring and performance visualization.</p>
-      <a href="#" target="_blank">View on GitHub</a>
+    <button class="accordion">⚙️ CI/CD & GitOps Projects</button>
+    <div class="panel">
+      <p>• ArgoCD (GitOps CD) to Deploy App to K8s Cluster (Coming Soon)</p>
+      <p>• Create end-to-end CI/CD Pipeline (Coming Soon)</p>
+    </div>
+
+    <button class="accordion">🧰 Extra DevOps Tools</button>
+    <div class="panel">
+      <p>• Deploy & Manage the Amazon Website using DevOps Tools (mix of Git, Docker, Jenkins, K8s) (Coming Soon)</p>
+      <p>• SettingUp & Running SonarQube for Project Analysis (code quality check) (Coming Soon)</p>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kritikaaggarwal2227@gmail.com">kritikaaggarwal2227@gmail.com</a></p>
-    <p>LinkedIn: <a href="linkedin.com/in/kritika-aggarwal-734997249/" target="_blank">kritikaaggarwal2227</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/kritika-aggarwal-734997249/" target="_blank">linkedin.com/in/kritika-aggarwal-734997249/</a></p>
   </section>
 
   <footer>
     <p>© 2025 Kritika Aggarwal | Built with ❤️ and DevOps spirit</p>
   </footer>
+
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
